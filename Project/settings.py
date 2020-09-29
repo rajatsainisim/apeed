@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'core',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+	'accounts',
 ]
 SITE_ID = 1
 MIDDLEWARE = [
