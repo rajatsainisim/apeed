@@ -1,0 +1,105 @@
+
+.portfolio-ul li ,.label-view ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.portfolio-ul li
+{
+	margin-bottom: 10px;
+}
+.portfolio-grid .card
+{
+	box-shadow:0 10px 20px -10px rgba(0, 0, 0, .2);
+	-webkit-box-shadow:0 10px 20px -10px rgba(0, 0, 0, .2);
+}
+.border-right {
+    border-left: 1px solid #ffffff !important;
+}
+.portfolio-content ul li:hover
+{
+	background-color: #615e5e;
+    border-color: #615e5e;
+}
+.portfolio-content ul li
+{
+	background-color: #555;
+    border-color: #555;
+}
+.portfolio-hover a {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 200px;
+	display: inherit;
+    font-weight: 700;
+}
+
+
+ul.inline-block {
+    display: inline-block;
+}
+.m-b-20 {
+	margin-bottom: 20px;
+}
+.m-l-20 {
+	margin-left: 20px;
+}
+
+.m-r-20 {
+	margin-right: 20px;
+}
+
+.panel.panel-primary {
+    border-color: #ececec !important;
+}
+.panel-footer {	
+	padding: 27px 16px 25px !important;
+}
+
+@media screen and (max-width: 640px) {
+
+.portfolio-hover a {
+  width: 100%;
+}
+
+.portfolio-hover .pull-right { float: none !important; }
+
+}
+
+.portfolio-filter-1.text-center.list-inline li {
+	margin: 2px;
+}
+
+.list-wrapper .items {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 11px;
+}
+
+.sideimage img {
+    width: 100% !important;
+    box-shadow: 0px 0px 2px #ccc;
+}
+.cx-section.contact-section{
+    padding: 50px 0;
+}
+.content.cx-section {
+    padding: 20px 0;
+}
+.youtube-video-div {    margin: auto;    text-align: center;}
+
+.hideclass{
+	display:none;
+}
+.padding-footer
+{
+	padding: 10px 15px !important;
+} 
+.d-flex
+{
+	 display: flex;
+}
+.w-50
+{
+	width: 50% !important;
+}

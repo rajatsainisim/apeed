@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def index(request):
     title = 'Home'
-    return render(request, 'index.html', {'title': title})
+    return render(request, 'landing_page.html', {'title': title})
 
 
 def sitemaps(request):
