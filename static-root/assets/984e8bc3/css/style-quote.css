@@ -1,0 +1,43 @@
+/**********Quote css starts***********/
+.call-action .area-title {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 0;
+	text-transform: none;
+}
+.call-action h4{
+	color:#fff;
+}
+.call-title{
+	color: #fff;
+	margin-bottom: 24px;
+}
+.call-action{
+	 background: #20A2D2;
+	  padding: 29px 0;
+}
+.cx-section{
+	background:#f4f4f4;
+	padding:20px 0;
+}
+.bg-gray{
+	background:#f4f4f4;
+}
+.sub--heading {
+    color: #090101;
+    font-size: 22px;
+    margin-top: -27px;
+    margin-bottom: 12px;
+}
+
+.bg-blue{
+	background:#006cff;
+}
+.text-white{
+color:#fff;
+}
+.quote-content .sub--heading{
+margin-top:0;
+
+}

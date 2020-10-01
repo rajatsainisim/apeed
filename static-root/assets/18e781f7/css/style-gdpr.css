@@ -1,0 +1,36 @@
+.bg-bottom {
+    padding: 10px !important;
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    z-index: 9999999999;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.line_h {
+	color: #fff;
+	display: inline-block;
+	margin-bottom:0;
+}
+
+.icon-description1 {
+	text-align: center;
+}
+
+.sb-site-container {
+	z-index: 0 !important;
+}
+
+#cookies-actions-form {
+	display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+	.bg-bottom {
+	    height: auto !important;
+	    padding: 10px 15px !important;
+	    font-size: 12px;
+	}
+}

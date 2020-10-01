@@ -19,5 +19,7 @@ urlpatterns = [
     path('product/', views.product_home, name='product'),
     path('login/', views.login, name='login'),
 
-    path('about_us/', about_us, name='about_us'),
+    path('about-us/', about_us, name='about-us'),
+    path('life-apeed/', life_apeed, name='life-apeed'),
+    path('clients/', clients, name='clients'),
 ]

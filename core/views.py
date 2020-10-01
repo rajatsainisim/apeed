@@ -19,4 +19,11 @@ def login(request):
 
 
 def about_us(request):
-    return render(request, 'index/company/about_us.html')
+    return render(request, 'index/company/about-us.html')
+
+
+def life_apeed(request):
+    return render(request, 'index/company/life@apeed.html')
+
+def clients(request):
+    return render(request,'index/company/clients_say.html')

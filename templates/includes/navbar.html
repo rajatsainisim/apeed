@@ -4,7 +4,7 @@
          <nav class="navbar navbar-expand-xl p-lg-0 p-2">
             <div class="container-fluid main-container">
                <a class="navbar-brand" href itemscope itemtype="https://schema.org/Brand">
-               <img class="img-reponsive" src="{% static '' %}themes/new/img/apeed_logo.png" alt="ApEED Technologies" itemprop="logo" title=" Technologies"></a>
+               <img class="img-reponsive" src="{% static 'themes/new/img/apeed_logo.png' %}" alt="ApEED Technologies" itemprop="logo" title=" Technologies"></a>
                <div class="hamburger hamburger--spring">
                   <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="hamburger-box"> <span class="hamburger-inner"></span>
@@ -14,15 +14,15 @@
                <!-- Navbar links -->
                <div class="collapse navbar-collapse" id="navbarNav">
                   <a class="navbar-brand d-xl-none mt-4 ml-4" href>
-                  <img class="img-fluid w-100 mw-100 mb-30 mt-10" src="{% static '' %}themes/new/img/toxsl_logo.png" alt="ToXSL">
+                  <img class="img-fluid w-100 mw-100 mb-30 mt-10" src="{% static 'themes/new/img/toxsl_logo.png' %}" alt="ToXSL">
                   </a>
                   <ul class="navbar-nav ml-auto  align-items-xl-center">
                      <li class="dropdown caret company-dropdown">
-                        <a class="dropdown-toggle" href="about-us/" id="companydropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Company </a>
+                        <a class="dropdown-toggle" href="{% url 'about-us' %}" id="companydropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Company </a>
                         <div class="dropdown-menu p-0 border-top pl-xl-0 pl-3" aria-labelledby="companydropdown">
-                           <a class="dropdown-item border-0" href="about-us/">About Us</a>
-                           <a class="dropdown-item" href="life-toxsl/">Life @ToXSL</a>
-                           <a class="dropdown-item" href="site/client/">What Our Clients Say</a>
+                           <a class="dropdown-item border-0" href="{% url 'about-us' %}">About Us</a>
+                           <a class="dropdown-item" href="{% url 'life-apeed' %}">Life @ApEED</a>
+                           <a class="dropdown-item" href="{% url 'clients' %}">What Our Clients Say</a>
                         </div>
                      </li>
                      <li class="dropdown mega-dropdown caret">
@@ -453,7 +453,7 @@
                      <li><a href="blog/">Blog</a></li>
                      <li><a href="career/">Career</a></li>
                      <li><a href="contact-us/">Contact Us</a></li>
-                     <li><a class="btn btn-green" href="contact/request/quote/"> <i class="fa fa-envelope"></i> Request Quote
+                     <li><a class="btn btn-green" href="{% url 'product' %}"> <i class="fa fa-envelope"></i> Products
                         </a>
                      </li>
                                        </ul>

@@ -1,0 +1,43 @@
+
+/*******************job-module***********/
+.job-overview li i
+{
+	font-size: 37px;
+	color: #33b5e5;
+}
+.job-opening ul li {
+    list-style: disc;
+}
+.job-opening ul {
+	padding-left:15px;
+}
+
+.job-btn{
+	background:#006cff;
+	border-color:#006cff;
+}
+
+input[type="file"] {
+    display: block;
+    padding: 0;
+}
+.summary {
+	text-align: right;
+	padding-bottom: 8px;
+}
+
+.job-module .area-title{
+	color:#000!important;
+}
+
+.cx-section {
+    padding: 20px 0;
+    position: relative;
+}
+
+.pdtop30{
+    padding-top:30px;
+}
+.contact-wrapper.apply-form {
+    padding: 20px 0;
+}

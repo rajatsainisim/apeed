@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'social-icons';
+	src: url('../fonts/social-icons_vntshu.ttf') format('truetype'),
+		url('../fonts/social-icons_vntshu.woff') format('woff'),
+		url('../fonts/social-icons_vntshu.svg#social-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.si {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'social-icons' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.si-yahoo:before {
+	content: "\e900";
+}
+
+.si-tumblr:before {
+	content: "\f173";
+}
+
+.si-telegram:before {
+	content: "\e904";
+}
+
+.si-gmail:before {
+	content: "\e905";
+}
+
+.si-pinterest:before {
+	content: "\e901";
+}
+
+.si-google-plus:before {
+	content: "\e902";
+}
+
+.si-vk:before {
+	content: "\e903";
+}
+
+.si-facebook:before {
+	content: "\ea90";
+}
+
+.si-whatsapp:before {
+	content: "\ea93";
+}
+
+.si-twitter:before {
+	content: "\ea96";
+}
+
+.si-linkedin:before {
+	content: "\eaca";
+}
+
+.social-share li {
+	display: inline-block;
+}
+.cx-blog-section .footer-social-menu li a {
+	    font-size: 16px;
+	    color: #fff;
+	    height: 35px;
+	    line-height: 35px;
+	    width: 35px;
+	    text-align: center;
+	    display: block;
+	    border-radius: 50%;
+	}
+	.cx-blog-section .linkedin{
+		background-color: #007ab9!important;
+	}
+	.cx-blog-section .facebook{
+		background-color: #3a589b!important;
+	}
+	.cx-blog-section .twitter{
+		background-color: #598dca!important;
+	}
+	.cx-blog-section .google{
+		background-color: #f34a38!important;
+	}
+	.cx-blog-section .meta-info a:hover{
+		color:#006cff; 
+	}
+	.cx-blog-section .whatsapp{
+	background-color:#0dc143!important;
+	
+	}
+	.portfolio-filter-wrap {
+		margin-bottom: 30px;
+	}
