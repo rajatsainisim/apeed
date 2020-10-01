@@ -1,67 +1,100 @@
 <!-- ======= Footer ======= -->
-<footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
+{% load static %}
 
-                <div class="col-lg-3 col-md-6 footer-info">
-                    <h3>Apeed Technology</h3>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                        valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet
-                        proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-contact">
-                    <h4>Contact Us</h4>
-                    <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
-                    </p>
-
-                    <div class="social-links">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-newsletter">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum
-                        dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
-                </div>
-
+      <footer class="footer widget-footer">
+         <div class="second-footer ttm-textcolor-white py-60">
+            <div class="container-fluid main-container">
+               <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-3 widget-area">
+                     <div class="widget widget_text">
+                        <img id="footer-logo-img" src="{% static 'themes/new/img/toxsl_logo.png' %}" alt="logo" class="img-center mb-3 mt-6">
+                        <div class="textwidget widget-text">
+                           <p>
+                              ToXSL Technologies - An ISO 27001 and ISO 9001:2015 certified global software services company focuses on Mobile and Web Application development. ToXSL Technologies was found in the year 2012 and is located in Mohali, Punjab.
+                              <a href="about-us/"> Read More </a>
+                           </p>
+                           <br>
+                           <div class="social-icons circle social-hover">
+                              <ul class="list-inline">
+                                                                  <li><a href="//www.facebook.com/ToXSL" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                 <li><a href="//twitter.com/ToXSL" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                 <li><a href="//www.youtube.com/user/ToXSLTech" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                 <li><a href="//www.linkedin.com/company/toxsl-technologies-pvt-ltd" target="_blank"><i class="fa fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                                               </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3 widget-area">
+                                          <div class="widget widget_nav_menu clearfix">
+                        <h3 class="widget-title">Web Development Frameworks</h3>
+                        <ul id="menu-footer-services">
+                                                      <li><a href="service/8/node-js-framework/">Node.JS Framework</a></li>
+                                                      <li><a href="service/9/angular-js-framework/">Angular.JS Framework</a></li>
+                                                      <li><a href="service/28/yii-framework/">Yii Framework</a></li>
+                                                      <li><a href="service/37/ruby-on-rails-development/">Ruby on Rails Development</a></li>
+                                                      <li><a href="service/39/django-framework/">Django Framework</a></li>
+                                                      <li><a href="service/40/spring-boot-framework/">Spring Boot Framework</a></li>
+                                                      <li><a href="service/61/laravel-development/">Laravel Development</a></li>
+                                                   </ul>
+                     </div>
+                                       </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3 widget-area">
+                                          <div class="widget widget_nav_menu clearfix">
+                        <h3 class="widget-title">Mobile App Development Services</h3>
+                        <ul id="menu-footer-services">
+                                                      <li><a href="service/15/android-app-development/">Android App Development</a></li>
+                                                      <li><a href="service/16/ios-app-development/">iOS App Development</a></li>
+                                                      <li><a href="service/17/hybrid-app-development/">Hybrid App Development</a></li>
+                                                      <li><a href="service/64/flutter-app-development/">Flutter App Development</a></li>
+                                                   </ul>
+                     </div>
+                                                               <div class="widget widget_nav_menu clearfix mt-4">
+                        <h3 class="widget-title">IoT Application Services</h3>
+                        <ul id="menu-footer-services">
+                                                      <li><a href="service/1/android-custom-rom-development/">Android Custom ROM Development</a></li>
+                                                      <li><a href="service/18/geekbox-rom/">GeekBox ROM</a></li>
+                                                      <li><a href="service/21/raspberry-pi/">Raspberry Pi</a></li>
+                                                   </ul>
+                     </div>
+                                       </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3 widget-area">
+                     <div class="widget widget_nav_menu clearfix">
+                        <h3 class="widget-title">GET IN TOUCH WITH US</h3>
+                        <p class="support-time mb-4">Support Time: 24x7</p>
+                        <img src="{% static 'themes/new/img/footer_logo.png' %}" alt="ToXsl" class="img-fluid">
+                        <div class="mt-5">
+                           <a href="contact/request/quote/" tabindex="0" class="btn btn-theme">Request Quote</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong>Apeed Technology</strong>. All Rights Reserved
-        </div>
-    </div>
-</footer>
-
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<!-- Uncomment below i you want to use a preloader -->
-<!-- <div id="preloader"></div> -->
+         </div>
+         <div class="bottom-footer-text text-white">
+            <div class="container">
+               <div class="row copyright">
+                  <div class="col-md-12">
+                     <ul id="menu-footer-menu" class="footer-nav-menu">
+                        <li class="pl-0"><a href="career/">Careers</a></li>
+                        <li><a href="contact-us/">Contact</a></li>
+                        <li><a href="industrial-trainings/">Trainings</a></li>
+                        <li><a href="privacy/">Privacy</a></li>
+                        <li><a href="terms/">Terms & Conditions</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-12">
+                     <div class>
+                        <span>
+                           &copy; 2012 - 2020 <a class="text-green" href>
+                           ToXSL Technologies Pvt. Ltd.</a> | ALL RIGHTS RESERVED.
+                           Hosted by
+                           <a href="https://jiwebhosting.com/" target="_blank" class="text-green">
+                              jiWebHosting.com
+                        </a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
