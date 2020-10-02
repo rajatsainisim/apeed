@@ -12,7 +12,7 @@ def login(request):
             # <process form cleaned data>
             # return HttpResponseRedirect('/success/')
 
-    return render(request, 'accounts/login.html',{'title':'Login'})
+    return render(request, 'product/accounts/login.html',{'title':'Login'})
 
 # from .forms import MyForm
 

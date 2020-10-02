@@ -11,7 +11,7 @@ def sitemaps(request):
 
 
 def product_home(request):
-    return render(request, 'product/landing_page/product_home.html')
+    return render(request, 'product/index.html')
 
 
 def login(request):
