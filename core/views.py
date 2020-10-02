@@ -18,6 +18,8 @@ def login(request):
     return render(request, 'product/landing_page/login.html')
 
 
+# company
+
 def about_us(request):
     return render(request, 'index/company/about-us.html')
 
@@ -25,5 +27,13 @@ def about_us(request):
 def life_apeed(request):
     return render(request, 'index/company/life@apeed.html')
 
+
 def clients(request):
-    return render(request,'index/company/clients_say.html')
+    return render(request, 'index/company/clients_say.html')
+
+# Services
+
+def automation_testing(request):
+    return render(request,'index/services/automation/automation-testing.html')
+
+

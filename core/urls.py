@@ -22,4 +22,8 @@ urlpatterns = [
     path('about-us/', about_us, name='about-us'),
     path('life-apeed/', life_apeed, name='life-apeed'),
     path('clients/', clients, name='clients'),
+
+    #services
+
+    path('automation-testing/', automation_testing, name='automation-testing'),
 ]
