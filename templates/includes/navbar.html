@@ -31,7 +31,12 @@
                            <ul class="list-unstyled">
                                                             <li class="d-xl-inline-block d-none mt-xl-2">
                                  <h5 class="position-relative">
-                                    <a href="{% url 'automation-testing' %}">Automation Testing</a>
+                                    {% for i in services_obj %}
+                                       {{i.services}}
+                                       {{ i }}
+                                    {%endfor%}
+                                    <a href="{% url 'automation-testing' %}
+                                    ">Automation Testing</a>
                                  </h5>
                                                                   <ul class="list-unstyled">
                                     <li><a href="{% url 'unit-testing' %}">Unit Testing</a></li>

@@ -1,9 +1,11 @@
 from django.shortcuts import render
-
+from .models import *
 
 def index(request):
     title = 'Home'
-    return render(request, 'landing_page.html', {'title': title})
+    services_obj = Subservices.objects.all()
+    print(services_obj)
+    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj})
 
 
 def sitemaps(request):
@@ -33,6 +35,7 @@ def clients(request):
 
 
 # ------------------------------ # Services #  --------------------------------------
+
 
 def automation_testing(request):
     return render(request, 'index/services/automation/automation-testing.html')
