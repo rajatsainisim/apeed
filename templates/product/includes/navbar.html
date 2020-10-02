@@ -1,61 +1,74 @@
-{% load static %}
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed">
 
-<header>
-        <!-- Header Start -->
-        <div class="header-area header-transparent">
-            <div class="main-header ">
-                <div class="header-bottom  header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="{% url 'product' %}"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10">
-                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
-                                    <!-- Main-menu -->
-                                    <div class="main-menu d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation">                                                                                          
-<!--                                                <li class="active" ><a href="{% url 'product' %}">Home</a></li>-->
-                                                <li><a href="features.html">Products</a></li>
-                                                <li><a href="features.html">Solutions</a></li>
-                                                <li><a href="features.html">Pricing</a></li>
-                                                <li><a href="features.html">Documentation</a></li>
-                                                <li><a href="features.html">Learn</a></li>
-                                                <li><a href="features.html">Apeed Marketplace</a></li>
-                                                <li><a href="features.html">Events</a></li>
-                                                <li><a href="features.html">Explore More</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                <li><a href="#">Blog</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="blog_details.html">Blog Details</a></li>
-                                                        <li><a href="elements.html">Element</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <!-- Header-btn -->
-                                    <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="{% url 'login' %}" class="border-btn">Log in</a>
-                                    </div>
-                                </div>
-                            </div> 
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">PRODUCTS</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">My account</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Login</a>
+                    <a class="dropdown-item" href="#">Register</a>
                 </div>
+            </li>
+
+        </ul>
+        <!-- Links -->
+        <div>
+            <button class="btn btn-success">Cart</button>
+        </div>
+        <div class="dropdown">
+            <!--Trigger-->
+            <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu2-1"
+                data-toggle="dropdown">Material
+                search</button>
+
+            <!--Menu-->
+            <div class="dropdown-menu dropdown-danger" id="custom-dropdown">
+                <!-- Search form -->
+                <div class="md-form">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </div>
+                <a class="dropdown-item mdb-dropdownLink-2" href="https://mdbootstrap.com/">MDB</a>
+                <a class="dropdown-item mdb-dropdownLink-2" href="https://mdbootstrap.com/docs/react/">MDB react</a>
+                <a class="dropdown-item mdb-dropdownLink-2" href="https://mdbootstrap.com/docs/angular/">MDB angular</a>
+                <a class="dropdown-item mdb-dropdownLink-2" href="https://mdbootstrap.com/docs/vue/">MDB vue</a>
+                <a class="dropdown-item mdb-dropdownLink-2" href="https://brandflow.net/">BrandFlow</a>
+                <a class="dropdown-item mdb-dropdownLink-2" href="https://mdbootstrap.com/education/bootstrap/">MDB
+                    Rocks</a>
             </div>
         </div>
-        <!-- Header End -->
-    </header>
-    <!-- header end -->
+        <!--/Dropdown danger-->
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+<header class="navbar navbar-expand-lg navbar-dark orange">
+</header>

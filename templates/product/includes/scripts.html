@@ -1,42 +1,22 @@
 {% load static %}
-<!-- JS here -->
-<script src="{% static './assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
-<!-- Jquery, Popper, Bootstrap -->
-<script src="{% static './assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
-<script src="{% static './assets/js/popper.min.js' %}"></script>
-<script src="{% static './assets/js/bootstrap.min.js' %}"></script>
-<!-- Jquery Mobile Menu -->
-<script src="{% static './assets/js/jquery.slicknav.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'mdb/js/jquery-3.4.1.min.js' %}"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="{% static 'mdb/js/popper.min.js' %}"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="{% static 'mdb/js/bootstrap.min.js' %}"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="{% static 'mdb/js/mdb.min.js' %}"></script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 
-<!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="{% static './assets/js/owl.carousel.min.js' %}"></script>
-<script src="{% static './assets/js/slick.min.js' %}"></script>
-<!-- One Page, Animated-HeadLin -->
-<script src="{% static './assets/js/wow.min.js' %}"></script>
-<script src="{% static './assets/js/animated.headline.js' %}"></script>
-<script src="{% static './assets/js/jquery.magnific-popup.js' %}"></script>
-
-<!-- Date Picker -->
-<script src="{% static './assets/js/gijgo.min.js' %}"></script>
-<!-- Nice-select, sticky -->
-<script src="{% static './assets/js/jquery.nice-select.min.js' %}"></script>
-<script src="{% static './assets/js/jquery.sticky.js' %}"></script>
-<!-- Progress -->
-<script src="{% static './assets/js/jquery.barfiller.js' %}"></script>
-
-<!-- counter , waypoint,Hover Direction -->
-<script src="{% static './assets/js/jquery.counterup.min.js' %}"></script>
-<script src="{% static './assets/js/waypoints.min.js' %}"></script>
-<script src="{% static './assets/js/jquery.countdown.min.js' %}"></script>
-<script src="{% static './assets/js/hover-direction-snake.min.js' %}"></script>
-
-<!-- contact js -->
-<script src="{% static '/assets/js/contact.js' %}."></script>
-<script src="{% static './assets/js/jquery.form.js' %}"></script>
-<script src="{% static './assets/js/jquery.validate.min.js' %}"></script>
-<script src="{% static './assets/js/mail-script.js' %}"></script>
-<script src="{% static './assets/js/jquery.ajaxchimp.min.js' %}"></script>
-
-<!-- Jquery Plugins, main Jquery -->
-<script src="{% static './assets/js/plugins.js' %}"></script>
-<script src="{% static './assets/js/main.js' %}"></script>
+<script>
+    $('#custom-dropdown').mdbDropSearch();
+</script>
