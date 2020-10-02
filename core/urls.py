@@ -19,6 +19,8 @@ urlpatterns = [
     path('product/', views.product_home, name='product'),
     path('login/', views.login, name='login'),
 
+    #company
+
     path('about-us/', about_us, name='about-us'),
     path('life-apeed/', life_apeed, name='life-apeed'),
     path('clients/', clients, name='clients'),
@@ -26,4 +28,8 @@ urlpatterns = [
     #services
 
     path('automation-testing/', automation_testing, name='automation-testing'),
+    path('unit-testing/', unit_testing, name='unit-testing'),
+    path('codecption/', codecption, name='codecption'),
+    path('cucumber/', cucumber, name='cucumber'),
+    path('selenium/', selenium, name='selenium'),
 ]

@@ -31,9 +31,24 @@ def life_apeed(request):
 def clients(request):
     return render(request, 'index/company/clients_say.html')
 
+
 # Services
 
 def automation_testing(request):
-    return render(request,'index/services/automation/automation-testing.html')
+    return render(request, 'index/services/automation/automation-testing.html')
 
 
+def unit_testing(request):
+    return render(request, 'index/services/automation/unit-testing.html')
+
+
+def codecption(request):
+    return render(request, 'index/services/automation/codecption.html')
+
+
+def cucumber(request):
+    return render(request, 'index/services/automation/cucumber.html')
+
+
+def selenium(request):
+    return render(request, 'index/services/automation/selenium.html')
