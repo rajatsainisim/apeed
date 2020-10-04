@@ -4,8 +4,9 @@ from .models import *
 def index(request):
     title = 'Home'
     services_obj = Subservices.objects.all()
+    hire_us = Hireuseconn.objects.all()
     print(services_obj)
-    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj})
+    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj,'hire_us':hire_us})
 
 
 
@@ -278,6 +279,6 @@ def alexa_app_development(request):
 
 # ------------------------------ # Hire Us #  --------------------------------------
 
-def hire_magento_developer(request):
+def hireus(request):
     return render(request, 'index/hire_us/hireus.html')
 

@@ -320,152 +320,16 @@
                      <li class="dropdown mega-dropdown caret">
                         <a href="javascript:void(0)" class=" dropdown-toggle position-relative" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hire Us</a>
                         <div class="dropdown-menu mega-menu border-top py-xl-2 py-0 px-xl-3 px-0 m-auto h-auto" aria-labelledby="navbarDropdownMenuLink4">
+                           
                            <ul class="list-unstyled">
-
+                              {% for data in hire_us%}
                               <li>
                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'hire-magento-developer' %}"> &nbsp;&nbsp;Hire Magento Developer</a></li>
+                                    <li><a href="{%  url 'hireus' %}"> &nbsp;&nbsp;Hire {{data.title}} </a></li>
                                  </ul>
                               </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire WordPress Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire eCommerce Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Python Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Drupal Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Android Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire iOS Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Software Programmer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire IoT Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Raspberry Pi Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Enterprise Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire WebRTC Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Automation Testing Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire DevOps Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Java Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Yii/Yii2 Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Spring Boot Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Ruby on Rails Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Cucumber Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Machine Learning Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire AI Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Unit Testing Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Codeception Developer</a></li>
-                                 </ul>
-                              </li>
-
-                              <li>
-                                 <ul class="list-unstyled">
-                                    <li><a href="#"> &nbsp;&nbsp;Hire Kotlin Developer</a></li>
-                                 </ul>
-                              </li>
-                                                         </ul>
+                              {% endfor %}
+</ul>
                         </div>
                      </li>
                      <li><a href="blog/">Blog</a></li>

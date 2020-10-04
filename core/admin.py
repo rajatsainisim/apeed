@@ -4,3 +4,5 @@ from .models import  *
 
 admin.site.register(Services)
 admin.site.register(Subservices)
+admin.site.register(Hireus)
+admin.site.register(Hireuseconn)

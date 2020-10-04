@@ -110,6 +110,6 @@ urlpatterns = [
 
     # ------------------------------ # Hire Us #  --------------------------------------
 
-    path('hire-magento-developer/', hire_magento_developer, name='hire-magento-developer'),
+    path('hireus/', hireus, name='hireus'),
 
 ]

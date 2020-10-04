@@ -44,6 +44,7 @@ class Hireus(models.Model):
 class Hireuseconn(models.Model):
     title = models.ForeignKey(Hireus, on_delete=models.CASCADE)
     
+
     class Meta:
         verbose_name = "Hire Us Content"
         verbose_name_plural = "Hire Us Content"
