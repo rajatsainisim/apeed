@@ -8,6 +8,7 @@ def index(request):
     return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj})
 
 
+
 def sitemaps(request):
     return request(request, 'sitemap.xml')
 
@@ -278,5 +279,5 @@ def alexa_app_development(request):
 # ------------------------------ # Hire Us #  --------------------------------------
 
 def hire_magento_developer(request):
-    return render(request, 'index/services/artificial/hire-magento-developer.html')
+    return render(request, 'index/hire_us/hire-magento-developer.html')
 
