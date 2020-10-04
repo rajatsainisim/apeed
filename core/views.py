@@ -279,5 +279,5 @@ def alexa_app_development(request):
 # ------------------------------ # Hire Us #  --------------------------------------
 
 def hire_magento_developer(request):
-    return render(request, 'index/hire_us/hire-magento-developer.html')
+    return render(request, 'index/hire_us/hireus.html')
 
