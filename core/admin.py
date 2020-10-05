@@ -20,6 +20,6 @@ admin.site.register(Services)
 admin.site.register(Subservices, ServicesAdmin)
 admin.site.register(Hireus)
 admin.site.register(Hireuseconn, HireusAdmin)
-admin.site.register(Hireuseconn)
+# admin.site.register(Hireuseconn)
 
 admin.site.register(Contact_us)

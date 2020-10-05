@@ -30,13 +30,10 @@ urlpatterns = [
     path('service/<id>', service, name='services'),
     
     # ------------------------------ # Hire Us #  --------------------------------------
-<<<<<<< HEAD
     path('hireus/<id>', hireus, name='hireus'),
-=======
 
     path('hireus/<id>', hireus, name='hireus'),
 
     path('contact-us/', contact_us, name='contact-us')
->>>>>>> 1358e1a9603b8dd5c26f3acfbc4ca94bfba2e960
 
 ]
