@@ -16,4 +16,10 @@ class HireusAdmin(admin.ModelAdmin):
 admin.site.register(Services)
 admin.site.register(Subservices,ServicesAdmin)
 admin.site.register(Hireus)
+<<<<<<< HEAD
 admin.site.register(Hireuseconn,HireusAdmin)
+=======
+admin.site.register(Hireuseconn)
+
+admin.site.register(Contact_us)
+>>>>>>> 1358e1a9603b8dd5c26f3acfbc4ca94bfba2e960
