@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from .models import *
 
+
 def index(request):
     title = 'Home'
     services_obj = Subservices.objects.all()
     hire_us = Hireuseconn.objects.all()
     print(services_obj)
-    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj,'hire_us':hire_us})
-
+    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj, 'hire_us': hire_us})
 
 
 def sitemaps(request):
@@ -277,8 +277,22 @@ def robotic_process_automation(request):
 def alexa_app_development(request):
     return render(request, 'index/services/artificial/alexa-app-development.html')
 
+
 # ------------------------------ # Hire Us #  --------------------------------------
 
 def hireus(request):
     return render(request, 'index/hire_us/hireus.html')
 
+
+def contact_us(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        mobile = request.POST.get('mobile')
+        subject = request.POST.get('subject')
+        description = request.POST.get('description')
+        print(name, email, mobile, subject, description)
+
+        contact = Contact_us(name=name, email=email, mobile=mobile, subject=subject, description=description)
+        contact.save()
+    return render(request, 'index/contact-us.html')

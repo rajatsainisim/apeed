@@ -112,4 +112,6 @@ urlpatterns = [
 
     path('hireus/', hireus, name='hireus'),
 
+    path('contact-us/', contact_us, name='contact-us')
+
 ]

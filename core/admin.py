@@ -6,3 +6,5 @@ admin.site.register(Services)
 admin.site.register(Subservices)
 admin.site.register(Hireus)
 admin.site.register(Hireuseconn)
+
+admin.site.register(Contact_us)
