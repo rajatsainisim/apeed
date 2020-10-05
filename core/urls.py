@@ -110,6 +110,6 @@ urlpatterns = [
 
     # ------------------------------ # Hire Us #  --------------------------------------
 
-    path('hireus/', hireus, name='hireus'),
+    path('hireus/<id>', hireus, name='hireus'),
 
 ]
