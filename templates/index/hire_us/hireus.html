@@ -1,1 +1,258 @@
-<h1>Wait I'm adding data on it</h1>
+{% extends 'base.html' %}
+{% block content%}
+<main>
+    <script>
+$(document).ready(function(){
+   $("header").addClass("custom-header");
+});
+</script>
+<section class="title-section">
+<div class="container-fluid main-container">
+   <div class="row justify-content-center">
+       <div class=" col-lg-5 text-center">
+           <h1 class="text-titile text-white mb-0 pb-3 position-relative font-weight-normal">Hire {{ data.title}}</h1>
+       </div>
+   </div>
+</div>
+</section>
+
+<section class="py-90 bg-blue details-section">
+<div class="container-fluid main-container">
+   <div class="row">
+       <div class="col-xl-12 col-lg-12 position-relative">
+           <div class="box-shadow bg-white">
+           <div class="p-5">
+           <p>{{ data.head }}</p>
+           
+<p><img alt="image" src="{{ data.image.url }}" /></p>
+
+
+<h2>{{ data.heading }}</h2>
+
+<p>{{ data.content }}</p> 
+      </div>
+       </div>
+   </div>
+
+</div>
+
+<br>
+<div class="col-xl-12 col-lg-12">
+    <div class="career-benefits">
+        <div class="career-social box-shadow bg-white p-4">
+              <h3 class="heading-title mb-4 ">Share this post on : </h3>
+                    <!--noindex--><ul class="social-share mb-0 list-unstyled d-flex pl-0"><li><a class="fa fa-linkedin-in linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftoxsl.com%2Fservice%2F2%2Fautomation-testing&amp;title=Automation+Testing&amp;summary=ToXSL+Technologies+is+an+experienced+automation+testing+company+that+understands+the+client+requirements+%26amp%3B+support+them+with+suitable+automation+testing+services+in+the+best+possible+way.%26nbsp%3BOur+wide+set+of+advanced+automation+tools+allow+our+customers+to+choose+what+is+best+suited+to+their+business.+Our+aim+is+to+reach+the+customer+expectations+and+help+businesses+to+reach+their+business+goals.Our+Automation+Testing+Services+include%3A%09A+wide+set+of+advanced+test+tools%09Building+a+perfect+test+environment+for+automation%09Generating+the+automation+test+report%09Testing+applications+on+various+platforms+with+different+configurations%09A+strong+delivery+model+to+release+bug-free+applications+and+software%09A+team+of+testers+with+years+of+experience+in+software+testing+services%09Our+services+include-+test+plans%2C+test+cases%2C+execution%2C+bug+reporting%2C+analysis+and+risk+assessmentTools+We+Use+for+Automation+Testing+Services%09Unit+Testing%09Codeception%09Selenium%09CucumberOur+Test+Automation+ApproachWe+work+closely+with+all-sized+businesses%2C..." rel="noopener" target="_blank"></a></li><li><a class="fa fa-facebook-f facebook" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Ftoxsl.com%2Fservice%2F2%2Fautomation-testing" rel="noopener" target="_blank"></a></li><li><a class="fa fa-twitter twitter" href="http://twitter.com/share?url=https%3A%2F%2Ftoxsl.com%2Fservice%2F2%2Fautomation-testing&amp;text=ToXSL+Technologies+is+an+experienced+automation+testing+company+that+understands+the+client+requirements+%26amp%3B+support+them+with+suitable+automation+testing+services+in+the+best+possible+way.%26nbsp%3BOur+wide+set+of+advanced+automation+tools+allow+our+customers+to+choose+what+is+best+suited+to+their+business.+Our+aim+is+to+reach+the+customer+expectations+and+help+businesses+to+reach+their+business+goals.Our+Automation+Testing+Services+include%3A%09A+wide+set+of+advanced+test+tools%09Building+a+perfect+test+environment+for+automation%09Generating+the+automation+test+report%09Testing+applications+on+various+platforms+with+different+configurations%09A+strong+delivery+model+to+release+bug-free+applications+and+software%09A+team+of+testers+with+years+of+experience+in+software+testing+services%09Our+services+include-+test+plans%2C+test+cases%2C+execution%2C+bug+reporting%2C+analysis+and+risk+assessmentTools+We+Use+for+Automation+Testing+Services%09Unit+Testing%09Codeception%09Selenium%09CucumberOur+Test+Automation+ApproachWe+work+closely+with+all-sized+businesses%2C..." rel="noopener" target="_blank"></a></li><li><a class="fa fa-whatsapp whatsapp" href="whatsapp://send?text=https%3A%2F%2Ftoxsl.com%2Fservice%2F2%2Fautomation-testing" rel="noopener" target="_blank"></a></li></ul><!--/noindex-->                                  <div class="service-side mt-4">
+                <div id="pph-hireme"></div>
+                <script type="text/javascript">
+                (function(d, s) {
+                    var useSSL = 'https:' == document.location.protocol;
+                    var js, where = d.getElementsByTagName(s)[0],
+                    js = d.createElement(s);
+                    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/824425218/343880.js?height=315&orientation=vertical&theme=light&hourlies=163646%2C10422&rnd='+parseInt(Math.random()*10000, 10);
+                    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+                }(document, 'script'));
+                </script>
+        </div>
+                </div>
+
+</div>
+</div>
+
+</div>
+</section>
+<!-- team-section -->
+<section class="py-90 testimonial-section">
+<div class="container-fluid main-container">
+   <!-- row -->
+   <div class="row justify-content-center">
+       <div class="col-xl-12 col-lg-12 text-center">
+           <h5 class="heading-xs dash text-white">Crowning Moments</h5>
+           <h2 class="text-titile text-uppercase mb-0 text-white">
+               SEE SOME OF THE <span class="text-green">TOP REVIEWS </span> OF OUR CLIENTS AND ON WHAT WE ARE PROUD OF
+           </h2>
+       </div>
+   </div>
+   <!-- row end -->
+
+   <!-- row -->
+   <div class="row mt-5">
+       <div class="col-lg-12">
+           <div class="testimonial-slide2  owl-carousel" data-item="3"
+           data-nav="false" data-dots="false" data-auto="true">
+                                   <!-- testimonials -->
+                   <div class="testimonials style2 text-center mb-20 mt-15">
+
+                       <div class="testimonial-content position-relative">
+                           <!-- testimonials-content -->
+                           <blockquote data-match-height="groupName"><p>Our project was rather complicated and difficult, but the team at ToXSL managed to handle it with great patience and care, following each step of the process and listening to my business requirements. Several issues rose while putting the changes live on my website and this is when the team showed most professionalism. They managed to resolve all issues one after another with good attention and time management. I would definitely recommend working with ToXSL Technologies.</p></blockquote>
+
+                           <div class="testimonial-caption d-block float-none">
+                               <div class="row">
+                                   <div class="col-md-6">
+                                   <h6> Victoria Salem</h6>
+                               <label>United Kingdom,</label>
+                                   </div>
+                                   <div class="col-md-6">
+                                   <div class="ttm-ratting-star">
+                                   <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                   class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                   class="fas fa-star"></i>
+                                   <br>
+                   <span class="badge badge-success p-2 mt-2">Five stars</span>
+                               </div>
+                                   </div>
+                               </div>
+
+
+                           </div>
+                       </div>
+
+                   </div>
+                                           <!-- testimonials -->
+                   <div class="testimonials style2 text-center mb-20 mt-15">
+
+                       <div class="testimonial-content position-relative">
+                           <!-- testimonials-content -->
+                           <blockquote data-match-height="groupName"><p>It was a great Experience will work with the team again for sure.</p></blockquote>
+
+                           <div class="testimonial-caption d-block float-none">
+                               <div class="row">
+                                   <div class="col-md-6">
+                                   <h6> Thony</h6>
+                               <label>USA,</label>
+                                   </div>
+                                   <div class="col-md-6">
+                                   <div class="ttm-ratting-star">
+                                   <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                   class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                   class="fas fa-star"></i>
+                                   <br>
+                   <span class="badge badge-success p-2 mt-2">Five stars</span>
+                               </div>
+                                   </div>
+                               </div>
+
+
+                           </div>
+                       </div>
+
+                   </div>
+                                           <!-- testimonials -->
+                   <div class="testimonials style2 text-center mb-20 mt-15">
+
+                       <div class="testimonial-content position-relative">
+                           <!-- testimonials-content -->
+                           <blockquote data-match-height="groupName"><p>The team at ToXSL work professionally throughout the project, they put client satisfaction first and ToXSL team priority to ensure the works delivered according to our requirement. The team even walk extra miles to make the changes needed on time. I extremely recommend Toxsl for anyone looking for a developers. I will definitely start a new project with ToXSL soon and will prioritise ToXSL for any of my future projects. I would like to personally thanks the ToXSL team for their excellent work handling my projects.</p></blockquote>
+
+                           <div class="testimonial-caption d-block float-none">
+                               <div class="row">
+                                   <div class="col-md-6">
+                                   <h6> Logan</h6>
+                               <label>Malaysia,</label>
+                                   </div>
+                                   <div class="col-md-6">
+                                   <div class="ttm-ratting-star">
+                                   <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                   class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                   class="fas fa-star"></i>
+                                   <br>
+                   <span class="badge badge-success p-2 mt-2">Five stars</span>
+                               </div>
+                                   </div>
+                               </div>
+
+
+                           </div>
+                       </div>
+
+                   </div>
+                                           <!-- testimonials -->
+                   <div class="testimonials style2 text-center mb-20 mt-15">
+
+                       <div class="testimonial-content position-relative">
+                           <!-- testimonials-content -->
+                           <blockquote data-match-height="groupName"><p>Great work! They are excellent communicator and work is great!</p></blockquote>
+
+                           <div class="testimonial-caption d-block float-none">
+                               <div class="row">
+                                   <div class="col-md-6">
+                                   <h6> Shawn</h6>
+                               <label>Canada,</label>
+                                   </div>
+                                   <div class="col-md-6">
+                                   <div class="ttm-ratting-star">
+                                   <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                   class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                   class="fas fa-star"></i>
+                                   <br>
+                   <span class="badge badge-success p-2 mt-2">Five stars</span>
+                               </div>
+                                   </div>
+                               </div>
+
+
+                           </div>
+                       </div>
+
+                   </div>
+
+       </div>
+       <!-- testimonial-slide end-->
+   </div>
+
+</div>
+<!-- row end-->
+</div>
+</section>
+
+<section class="py-90">
+<div class="container-fluid main-container">
+   <div class="row justify-content-center">
+       <div class="col-md-8 text-center">
+           <div class="mr-3">
+               <h2 class="text-titile text-uppercase">
+                   WHAT TO <span class="text-green"> EXPECT</span> FROM US
+               </h2>
+               <p>We will help you every step of the way and get you the results that will help you to grow your business. </p>
+           </div>
+       </div>
+   </div>
+   <div class="row mt-5">
+       <div class="col-md-6 col-xl-3 col-lg-6">
+           <div class="commit-inner border-md-right-0">
+               <img src="/themes/new/img/solutions-icon/custom-solution.png"
+                   class="img-fluid" alt="Customized Solutions">
+               <h3 class="heading-title my-3">Customized Solutions</h3>
+               <p>We focus on giving a personalized experience to our customers that is why we will customize every solution as per your business requirements. </p>
+       </div>
+   </div>
+       <div class="col-md-6 col-xl-3 col-lg-6">
+           <div class="commit-inner border-lg-right-0">
+               <img src="/themes/new/img/solutions-icon/save-money-time.png"
+                   class="img-fluid" alt="Save Money & Time">
+               <h3 class="heading-title my-3">Save Money & Time</h3>
+               <p>We will offer you the best technology solutions based on your budget and timely deliver all the project to satisfy our clients.  </p>
+           </div>
+       </div>
+       <div class="col-md-6 col-xl-3 col-lg-6">
+           <div class="commit-inner border-md-right-0">
+               <img src="/themes/new/img/solutions-icon/skilled.png"
+                   class="img-fluid" alt="Skilled Developers">
+               <h3 class="heading-title my-3">Skilled Developers</h3>
+               <p>We have experienced and skilled developers in-house who are technically proficient to manage any level of complicated projects.</p>
+           </div>
+       </div>
+       <div class="col-md-6 col-xl-3 col-lg-6">
+           <div class="commit-inner border-right-0">
+               <img src="/themes/new/img/solutions-icon/support2.png"
+                   class="img-fluid" alt="24/7 Dedicated Support">
+               <h3 class="heading-title my-3">24/7 Dedicated Support</h3>
+               <p>We offer the best technical support to our clients. We make sure that we have 24/7 dedicated support in case you want any assistance.</p>
+           </div>
+       </div>
+   </div>
+</div>
+</section>
+ </main>
+
+{% endblock %}

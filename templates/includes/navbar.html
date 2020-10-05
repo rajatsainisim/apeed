@@ -30,290 +30,23 @@
                         <a href="javascript:void(0)" class="dropdown-toggle position-relative" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                         <div class="dropdown-menu mega-menu border-top py-xl-2 py-0 px-xl-3 px-0 m-auto" aria-labelledby="navbarDropdownMenuLink3">
                            <ul class="list-unstyled">
-                                                            <li class="d-xl-inline-block d-none mt-xl-2">
+                              {% for i in services_obj %}
+                              <li class="d-xl-inline-block d-none mt-xl-2">
                                  <h5 class="position-relative">
-                                    {% for i in services_obj %}
-                                       {{i.services}}
-                                       {{ i }}
-                                    {%endfor%}
-                                    <a href="{% url 'automation-testing' %}
-                                    ">Automation Testing</a>
+                                    <a href="#">{{i.services}}</a>
                                  </h5>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{% url 'unit-testing' %}">Unit Testing</a></li>
+                                 {% if i.services == "Automation Testing" %}
+                                    <ul class="list-unstyled">
+                                       <li><a href="#">{{ i }}</a></li>
+                                    </ul>
+                                 {% else %}
+                                 <ul class="list-unstyled">
+                                    <li><a href="#">{{ i }}</a></li>
                                  </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{% url 'codecption' %}">Codeception</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{% url 'cucumber' %}">Cucumber</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{% url 'selenium' %}">Selenium</a></li>
-                                 </ul>
-                                                               </li>
-                              <li class="dropdown-submenu d-xl-none d-block">
-                                 <a class="dropdown-item dropdown-toggle caret d-block" href="#">Automation Testing</a>
-                                 <ul class="dropdown-menu">
-                                                                        <li><a href="service/22/unit-testing/" class="dropdown-item">Unit Testing</a></li>
-                                                                        <li><a href="service/23/codeception/" class="dropdown-item">Codeception</a></li>
-                                                                        <li><a href="service/44/cucumber/" class="dropdown-item">Cucumber</a></li>
-                                                                        <li><a href="service/45/selenium/" class="dropdown-item">Selenium</a></li>
-                                                                     </ul>
+                                 {% endif %}
                               </li>
-                                                            <li class="d-xl-inline-block d-none mt-xl-2">
-                                 <h5 class="position-relative">
-                                    <a href="{% url 'iot-application-service' %}">IoT Application Services</a>
-                                 </h5>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{% url 'android-custom-rom-development' %}">Android Custom ROM Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{% url 'geekbox-rom' %}">GeekBox ROM</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{% url 'raspberry-pi' %}">Raspberry Pi</a></li>
-                                 </ul>
-                                                               </li>
-                              <li class="dropdown-submenu d-xl-none d-block">
-                                 <a class="dropdown-item dropdown-toggle caret d-block" href="#">IoT Application Services</a>
-                                 <ul class="dropdown-menu">
-                                                                        <li><a href="service/1/android-custom-rom-development/" class="dropdown-item">Android Custom ROM Development</a></li>
-                                                                        <li><a href="service/18/geekbox-rom/" class="dropdown-item">GeekBox ROM</a></li>
-                                                                        <li><a href="service/21/raspberry-pi/" class="dropdown-item">Raspberry Pi</a></li>
-                                                                     </ul>
-                              </li>
-                                                            <li class="d-xl-inline-block d-none mt-xl-2">
-                                 <h5 class="position-relative">
-                                    <a href="{% url 'mobile-app-development-services' %}">Mobile App Development Services</a>
-                                 </h5>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'android-app-development' %}">Android App Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'ios-app-development' %}">iOS App Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'hybrid-app-development' %}">Hybrid App Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'flutter-app-development' %}">Flutter App Development</a></li>
-                                 </ul>
-                                                               </li>
-                              <li class="dropdown-submenu d-xl-none d-block">
-                                 <a class="dropdown-item dropdown-toggle caret d-block" href="#">Mobile App Development Services</a>
-                                 <ul class="dropdown-menu">
-                                                                        <li><a href="service/15/android-app-development/" class="dropdown-item">Android App Development</a></li>
-                                                                        <li><a href="service/16/ios-app-development/" class="dropdown-item">iOS App Development</a></li>
-                                                                        <li><a href="service/17/hybrid-app-development/" class="dropdown-item">Hybrid App Development</a></li>
-                                                                        <li><a href="service/64/flutter-app-development/" class="dropdown-item">Flutter App Development</a></li>
-                                                                     </ul>
-                              </li>
-                                                            <li class="d-xl-inline-block d-none mt-xl-2">
-                                 <h5 class="position-relative">
-                                    <a href="{%  url 'web-design-services' %}">Web Design Services</a>
-                                 </h5>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'website-redesign' %}">Website Redesign</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'graphic-design' %}">Graphic Design</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'mobile-application-design' %}">Mobile Application Design</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'responsive-web-design' %}">Responsive Web Design</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'logo-design' %}">Logo Design</a></li>
-                                 </ul>
-                                                               </li>
-                              <li class="dropdown-submenu d-xl-none d-block">
-                                 <a class="dropdown-item dropdown-toggle caret d-block" href="#">Web Design Services</a>
-                                 <ul class="dropdown-menu">
-                                                                        <li><a href="service/12/website-redesign/" class="dropdown-item">Website Redesign</a></li>
-                                                                        <li><a href="service/13/graphic-design/" class="dropdown-item">Graphic Design</a></li>
-                                                                        <li><a href="service/14/mobile-application-design/" class="dropdown-item">Mobile Application Design</a></li>
-                                                                        <li><a href="service/26/responsive-web-design/" class="dropdown-item">Responsive Web Design</a></li>
-                                                                        <li><a href="service/27/logo-design/" class="dropdown-item">Logo Design</a></li>
-                                                                     </ul>
-                              </li>
-                                                            <li class="d-xl-inline-block d-none mt-xl-2">
-                                 <h5 class="position-relative">
-                                    <a href="{%  url 'web-development-services' %}">Web Development Services</a>
-                                 </h5>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'api-integration-services' %}">API Integration Services</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'php-development' %}">PHP Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'react-js-development' %}">React JS Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'python-development' %}">Python Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'magento-development' %}">Magento Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'wordpress-development-services' %}">WordPress Development Services</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'e-commerce-website-development' %}">E-commerce Website Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'full-stack-development' %}">Full Stack Development</a></li>
-                                 </ul>
-                                                                 <ul class="list-unstyled">
-                                    <li><a href="{%  url 'progressive-web-apps' %}">Progressive Web Apps</a></li>
-                                 </ul>
-                                                               </li>
-                              <li class="dropdown-submenu d-xl-none d-block">
-                                 <a class="dropdown-item dropdown-toggle caret d-block" href="#">Web Development Services</a>
-                                 <ul class="dropdown-menu">
-                                                                        <li><a href="service/10/api-integration-services/" class="dropdown-item">API Integration Services</a></li>
-                                                                        <li><a href="service/11/php-development/" class="dropdown-item">PHP Development</a></li>
-                                                                        <li><a href="service/29/react-js-development/" class="dropdown-item">React JS Development</a></li>
-                                                                        <li><a href="service/30/python-development/" class="dropdown-item">Python Development</a></li>
-                                                                        <li><a href="service/31/magento-development/" class="dropdown-item">Magento Development</a></li>
-                                                                        <li><a href="service/33/wordpress-development-services/" class="dropdown-item">WordPress Development Services</a></li>
-                                                                        <li><a href="service/34/e-commerce-website-development/" class="dropdown-item">E-commerce Website Development</a></li>
-                                                                        <li><a href="service/42/full-stack-development/" class="dropdown-item">Full Stack Development</a></li>
-                                                                        <li><a href="service/42/Progressive-Web-Apps/" class="dropdown-item">Progressive Web Apps</a></li>
-                                                                     </ul>
-                              </li>
-                                                            <li class="d-xl-inline-block d-none mt-xl-2">
-                                 <h5 class="position-relative">
-                                    <a href="{%  url 'web-development-frameworks' %}">Web Development Frameworks</a>
-                                 </h5>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'node-js-framework' %}">Node.JS Framework</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'angular-js-framework' %}">Angular.JS Framework</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'yii-framework' %}">Yii Framework</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'ruby-on-rails-development' %}">Ruby on Rails Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'django-framework' %}">Django Framework</a></li>
-                                 </ul>
-                                                                <ul class="list-unstyled">
-                                    <li><a href="{%  url 'flask-framework' %}">Flask Framework</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'spring-boot-framework' %}">Spring Boot Framework</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'laravel-development' %}">Laravel Development</a></li>
-                                 </ul>
-                                                               </li>
-                              <li class="dropdown-submenu d-xl-none d-block">
-                                 <a class="dropdown-item dropdown-toggle caret d-block" href="#">Web Development Frameworks</a>
-                                 <ul class="dropdown-menu">
-                                                                        <li><a href="service/8/node-js-framework/" class="dropdown-item">Node.JS Framework</a></li>
-                                                                        <li><a href="service/9/angular-js-framework/" class="dropdown-item">Angular.JS Framework</a></li>
-                                                                        <li><a href="service/28/yii-framework/" class="dropdown-item">Yii Framework</a></li>
-                                                                        <li><a href="service/37/ruby-on-rails-development/" class="dropdown-item">Ruby on Rails Development</a></li>
-                                                                        <li><a href="service/39/django-framework/" class="dropdown-item">Django Framework</a></li>
-                                                                        <li><a href="service/39/flask-framework/" class="dropdown-item">Flask Framework</a></li>
-                                                                        <li><a href="service/40/spring-boot-framework/" class="dropdown-item">Spring Boot Framework</a></li>
-                                                                        <li><a href="service/61/laravel-development/" class="dropdown-item">Laravel Development</a></li>
-                                                                     </ul>
-                              </li>
-                                                            <li class="d-xl-inline-block d-none mt-xl-2">
-                                 <h5 class="position-relative">
-                                    <a href="{%  url 'digital-marketing-services' %}">Digital Marketing Services</a>
-                                 </h5>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'orm' %}">ORM</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'smm' %}">SMM</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'smo' %}">SMO</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'seo' %}">SEO</a></li>
-                                 </ul>
-                                                               </li>
-                              <li class="dropdown-submenu d-xl-none d-block">
-                                 <a class="dropdown-item dropdown-toggle caret d-block" href="#">Digital Marketing Services</a>
-                                 <ul class="dropdown-menu">
-                                                                        <li><a href="service/47/orm/" class="dropdown-item">ORM</a></li>
-                                                                        <li><a href="service/48/smm/" class="dropdown-item">SMM</a></li>
-                                                                        <li><a href="service/49/smo/" class="dropdown-item">SMO</a></li>
-                                                                        <li><a href="service/50/seo/" class="dropdown-item">SEO</a></li>
-                                                                     </ul>
-                              </li>
-                                                            <li class="d-xl-inline-block d-none mt-xl-2">
-                                 <h5 class="position-relative">
-                                    <a href="{%  url 'erp-software-development' %}">ERP Software Development</a>
-                                 </h5>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'inventory-management' %}">Inventory Management</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'project-management' %}">Project Management</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'human-resource-management' %}">Human Resource Management</a></li>
-                                 </ul>
-                                                               </li>
-                              <li class="dropdown-submenu d-xl-none d-block">
-                                 <a class="dropdown-item dropdown-toggle caret d-block" href="#">ERP Software Development</a>
-                                 <ul class="dropdown-menu">
-                                                                        <li><a href="service/52/inventory-management/" class="dropdown-item">Inventory Management</a></li>
-                                                                        <li><a href="service/53/project-management/" class="dropdown-item">Project Management</a></li>
-                                                                        <li><a href="service/54/human-resource-management/" class="dropdown-item">Human Resource Management</a></li>
-                                                                     </ul>
-                              </li>
-                                                            <li class="d-xl-inline-block d-none mt-xl-2">
-                                 <h5 class="position-relative">
-                                    <a href="{%  url 'artificial-intelligence' %}">Artificial Intelligence</a>
-                                 </h5>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'chatbot-development' %}">Chatbot Development</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'natural-language-processing' %}">Natural Language Processing</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'human-and-computer-vision' %}">Human and computer vision</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'machine-learning' %}">Machine Learning</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'deep-learning' %}">Deep Learning</a></li>
-                                 </ul>
-                                                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'robotic-process-automation' %}">Robotic Process Automation</a></li>
-                                 </ul>
-                                                                 <ul class="list-unstyled">
-                                    <li><a href="{%  url 'alexa-app-development' %}">Alexa App Development</a></li>
-                                 </ul>
-                                                               </li>
-                              <li class="dropdown-submenu d-xl-none d-block">
-                                 <a class="dropdown-item dropdown-toggle caret d-block" href="#">Artificial Intelligence</a>
-                                 <ul class="dropdown-menu">
-                                                                        <li><a href="service/56/chatbot-development/" class="dropdown-item">Chatbot Development</a></li>
-                                                                        <li><a href="service/57/natural-language-processing/" class="dropdown-item">Natural Language Processing</a></li>
-                                                                        <li><a href="service/58/human-and-computer-vision/" class="dropdown-item">Human and computer vision</a></li>
-                                                                        <li><a href="service/59/machine-learning/" class="dropdown-item">Machine Learning</a></li>
-                                                                        <li><a href="service/60/deep-learning/" class="dropdown-item">Deep Learning</a></li>
-                                                                        <li><a href="service/63/robotic-process-automation/" class="dropdown-item">Robotic Process Automation</a></li>
-                                                                        <li><a href="service/63/alexa-app-development/" class="dropdown-item">Alexa App Development</a></li>
-                                                                     </ul>
-                              </li>
-                                                         </ul>
+                              {%endfor%}
+                              </ul>
                         </div>
                      </li>
                      <li><a href="portfolio/">Portfolio</a></li>
@@ -325,7 +58,7 @@
                               {% for data in hire_us%}
                               <li>
                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'hireus' %}"> &nbsp;&nbsp;Hire {{data.title}} </a></li>
+                                    <li><a href="{%  url 'hireus' data.id %}"> &nbsp;&nbsp;Hire {{data.title}} </a></li>
                                  </ul>
                               </li>
                               {% endfor %}
@@ -338,7 +71,7 @@
                      <li><a class="btn btn-green" href="{% url 'product' %}"> <i class="fa fa-envelope"></i> Products
                         </a>
                      </li>
-                                       </ul>
+                  </ul>
                </div>
             </div>
          </nav>
