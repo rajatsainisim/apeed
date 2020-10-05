@@ -7,20 +7,14 @@ def index(request):
     services_obj = Subservices.objects.all()
     # new_obj = Subservices.objects.get()
     hire_us = Hireuseconn.objects.all()
-<<<<<<< HEAD
     return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj,'hire_us':hire_us})
 
-=======
-<<<<<<< HEAD
+
     print(services_obj)
     return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj, 'hire_us': hire_us})
-=======
     return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj,'hire_us':hire_us})
 
->>>>>>> e562cdd8a98661bba9dfbdcda78402a0427f09a2
 
-
->>>>>>> 1358e1a9603b8dd5c26f3acfbc4ca94bfba2e960
 def sitemaps(request):
     return request(request, 'sitemap.xml')
 
@@ -54,8 +48,7 @@ def service(request):
     return render(request, 'index/services/automation/automation-testing.html')
 
 
-<<<<<<< HEAD
-=======
+
 def unit_testing(request):
     return render(request, 'index/services/automation/unit-testing.html')
 
@@ -291,15 +284,13 @@ def alexa_app_development(request):
     return render(request, 'index/services/artificial/alexa-app-development.html')
 
 
->>>>>>> 1358e1a9603b8dd5c26f3acfbc4ca94bfba2e960
 # ------------------------------ # Hire Us #  --------------------------------------
 
 def hireus(request,id):
     hire_us = Hireuseconn.objects.get(id=id)
     title = 'Hire Us',hire_us.title
     return render(request, 'index/hire_us/hireus.html',{'title':title,'data':hire_us})
-<<<<<<< HEAD
-=======
+
 
 
 def contact_us(request):
@@ -310,8 +301,6 @@ def contact_us(request):
         subject = request.POST.get('subject')
         description = request.POST.get('description')
         print(name, email, mobile, subject, description)
->>>>>>> 1358e1a9603b8dd5c26f3acfbc4ca94bfba2e960
-
         contact = Contact_us(name=name, email=email, mobile=mobile, subject=subject, description=description)
         contact.save()
     return render(request, 'index/contact-us.html')
