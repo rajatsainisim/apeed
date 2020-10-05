@@ -6,8 +6,13 @@ def index(request):
     title = 'Home'
     services_obj = Subservices.objects.all()
     hire_us = Hireuseconn.objects.all()
+<<<<<<< HEAD
     print(services_obj)
     return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj, 'hire_us': hire_us})
+=======
+    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj,'hire_us':hire_us})
+
+>>>>>>> e562cdd8a98661bba9dfbdcda78402a0427f09a2
 
 
 def sitemaps(request):
@@ -280,8 +285,10 @@ def alexa_app_development(request):
 
 # ------------------------------ # Hire Us #  --------------------------------------
 
-def hireus(request):
-    return render(request, 'index/hire_us/hireus.html')
+def hireus(request,id):
+    hire_us = Hireuseconn.objects.get(id=id)
+    title = 'Hire Us',hire_us.title
+    return render(request, 'index/hire_us/hireus.html',{'title':title,'data':hire_us})
 
 
 def contact_us(request):

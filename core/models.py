@@ -48,7 +48,15 @@ class Hireus(models.Model):
 
 class Hireuseconn(models.Model):
     title = models.ForeignKey(Hireus, on_delete=models.CASCADE)
+<<<<<<< HEAD
 
+=======
+    head = models.TextField(null=True,blank=True)
+    image = models.ImageField(upload_to='hire_us_images',null=True,blank=True)
+    heading = models.CharField(max_length=225,null=True,blank=True)
+    content = models.TextField(null=True,blank=True)
+    
+>>>>>>> e562cdd8a98661bba9dfbdcda78402a0427f09a2
     class Meta:
         verbose_name = "Hire Us Content"
         verbose_name_plural = "Hire Us Content"

@@ -325,7 +325,7 @@
                               {% for data in hire_us%}
                               <li>
                                  <ul class="list-unstyled">
-                                    <li><a href="{%  url 'hireus' %}"> &nbsp;&nbsp;Hire {{data.title}} </a></li>
+                                    <li><a href="{%  url 'hireus' data.id %}"> &nbsp;&nbsp;Hire {{data.title}} </a></li>
                                  </ul>
                               </li>
                               {% endfor %}
