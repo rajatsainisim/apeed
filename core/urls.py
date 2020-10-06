@@ -34,6 +34,18 @@ urlpatterns = [
 
     path('hireus/<id>', hireus, name='hireus'),
 
-    path('contact-us/', contact_us, name='contact-us')
+    # ------------------------------ # Contact Us #  --------------------------------------
 
+    path('contact-us/', contact_us, name='contact-us'),
+
+    # ------------------------------ # Portfolio #  --------------------------------------
+
+    path('portfolio/', portfolio, name='portfolio'),
+
+    # ------------------------------ # career #  --------------------------------------
+
+    path('career/', career, name='career'),
+
+    # ------------------------------ # Blog #  --------------------------------------
+    path('blog/', blog, name='blog')
 ]

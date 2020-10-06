@@ -7,12 +7,11 @@ def index(request):
     services_obj = Subservices.objects.all()
     # new_obj = Subservices.objects.get()
     hire_us = Hireuseconn.objects.all()
-    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj,'hire_us':hire_us})
-
+    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj, 'hire_us': hire_us})
 
     print(services_obj)
     return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj, 'hire_us': hire_us})
-    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj,'hire_us':hire_us})
+    return render(request, 'landing_page.html', {'title': title, 'services_obj': services_obj, 'hire_us': hire_us})
 
 
 def sitemaps(request):
@@ -46,7 +45,6 @@ def clients(request):
 
 def service(request):
     return render(request, 'index/services/automation/automation-testing.html')
-
 
 
 def unit_testing(request):
@@ -286,11 +284,12 @@ def alexa_app_development(request):
 
 # ------------------------------ # Hire Us #  --------------------------------------
 
-def hireus(request,id):
+def hireus(request, id):
     hire_us = Hireuseconn.objects.get(id=id)
-    title = 'Hire Us',hire_us.title
-    return render(request, 'index/hire_us/hireus.html',{'title':title,'data':hire_us})
+    title = 'Hire Us', hire_us.title
+    return render(request, 'index/hire_us/hireus.html', {'title': title, 'data': hire_us})
 
+    # ------------------------------ # Contact Us #  --------------------------------------
 
 
 def contact_us(request):
@@ -304,3 +303,21 @@ def contact_us(request):
         contact = Contact_us(name=name, email=email, mobile=mobile, subject=subject, description=description)
         contact.save()
     return render(request, 'index/contact-us.html')
+
+    # ------------------------------ # Portfolio #  --------------------------------------
+
+
+def portfolio(request):
+    return render(request, 'index/portfolio/portfolio.html')
+
+    # ------------------------------ # career #  --------------------------------------
+
+
+def career(request):
+    return render(request, 'index/career/career.html')
+
+    # ------------------------------ # Blog #  --------------------------------------
+
+
+def blog(request):
+    return render(request, 'index/blog/blog.html')

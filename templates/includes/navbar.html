@@ -49,7 +49,7 @@
                               </ul>
                         </div>
                      </li>
-                     <li><a href="portfolio/">Portfolio</a></li>
+                     <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
                      <li class="dropdown mega-dropdown caret">
                         <a href="javascript:void(0)" class=" dropdown-toggle position-relative" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hire Us</a>
                         <div class="dropdown-menu mega-menu border-top py-xl-2 py-0 px-xl-3 px-0 m-auto h-auto" aria-labelledby="navbarDropdownMenuLink4">
@@ -65,8 +65,8 @@
 </ul>
                         </div>
                      </li>
-                     <li><a href="blog/">Blog</a></li>
-                     <li><a href="career/">Career</a></li>
+                     <li><a href="{% url 'blog' %}">Blog</a></li>
+                     <li><a href="{% url 'career' %}">Career</a></li>
                      <li><a href="{% url 'contact-us' %}">Contact Us</a></li>
                      <li><a class="btn btn-green" href="{% url 'product' %}"> <i class="fa fa-envelope"></i> Products
                         </a>
