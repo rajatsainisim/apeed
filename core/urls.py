@@ -28,7 +28,7 @@ urlpatterns = [
 
     # services
     path('service/<id>', service, name='services'),
-    
+
     # ------------------------------ # Hire Us #  --------------------------------------
     path('hireus/<id>', hireus, name='hireus'),
 
@@ -47,5 +47,10 @@ urlpatterns = [
     path('career/', career, name='career'),
 
     # ------------------------------ # Blog #  --------------------------------------
-    path('blog/', blog, name='blog')
+    path('blog/', blog, name='blog'),
+
+    # ------------------------------ # Get In Touch #  --------------------------------------
+
+    path('contact-request/', contact_request, name='contact-request'),
+
 ]

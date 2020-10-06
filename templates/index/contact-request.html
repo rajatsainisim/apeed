@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en-US">
+{% include 'includes/head.html'%}
+
+<body>
+{% include 'includes/navbar.html' %}
+
+
+    <main>
+
+<div class="wrapper">
+	<div class="content-section card">
+		   <script>
+    $(document).ready(function(){
+         $("header").addClass("custom-header");
+    });
+</script>
+
+<section class="title-section">
+  <div itemscope itemtype="http://schema.org/Store">
+  <div class="container-fluid main-container">
+        <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <h1 class="text-titile text-uppercase text-white mb-0 pb-3 position-relative" itemprop="name">We would love to
+                     know about your project</h1>
+      </div>
+    </div>
+       </div>
+</div>
+</section>
+<div class="py-90 bg-blue">
+      <div class="container-fluid main-container">
+         <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-12">
+                <div class="box-shadow p-5 bg-white">
+                      <h3 class="heading-title text-center mb-4">Fill the below form & one of our
+                     experts will contact you soon.</h3>&nbsp
+                      <h4 class="clr-blue">
+                  </h4>
+                        <form id="kyc-form" class="row quote-form" action="/contact/request/quote" method="post">
+<input type="hidden" name="_csrf_toxsl" value="YRV8uNu1V-GjFyOg1TpFOjF3SR9VOSlUF4eTIpkAkmUPYQTyg8YZq5JYW_W4bXNtWjg6eCIJXAxPs94a2km_PQ==">
+                           <div class="col-md-6">
+                             <div class="form-group field-quote-full_name required">
+<label for="quote-full_name">Full Name</label>
+<input type="text" id="quote-full_name" class="form-control" name="Quote[full_name]" maxlength="255" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>                           </div>
+                            <div class="col-md-6">
+                               <div class="form-group field-quote-email required">
+<label for="quote-email">Email</label>
+<input type="text" id="quote-email" class="form-control" name="Quote[email]" maxlength="255" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group field-quote-mobile">
+<label for="quote-mobile">Mobile</label>
+<input type="text" id="quote-mobile" class="form-control" name="Quote[mobile]" maxlength="255">
+
+<div class="invalid-feedback"></div>
+</div>                              <div class="form-group field-quote-skype">
+<label for="quote-skype">Skype</label>
+<input type="text" id="quote-skype" class="form-control" name="Quote[skype]" maxlength="255">
+
+<div class="invalid-feedback"></div>
+</div>
+                              <div class="form-group field-quote-verifycode">
+<label for="quote-verifycode">Captcha</label>
+<div class="row"><div class="col-xl-5 col-lg-6"><div class="border h-60 mb-3 mb-lg-0"><img id="quote-verifycode-image" src="/contact/request/captcha?v=5f7c2401f331d8.14170175" alt=""></div></div><div class="col-xl-7 col-lg-6"><input type="text" id="quote-verifycode" class="form-control" name="Quote[verifyCode]"></div></div>
+
+<div class="invalid-feedback"></div>
+</div>                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group field-quote-detail">
+<label for="quote-detail">Tell us more about your requirements</label>
+<textarea id="quote-detail" class="form-control" name="Quote[detail]" rows="7" column="12"></textarea>
+
+<div class="invalid-feedback"></div>
+</div>                            </div>
+
+
+                        <div class="col-md-12 text-center mt-4">
+                           <button type="submit" id="kyc-form-submit" class="btn btn-theme">Submit</button>
+                        </div>
+                        </form>                     </div>
+
+            </div>
+         </div>
+      </div>
+
+</div>
+
+</div>	</div>
+</div>
+
+
+      </main>
+
+
+{% include 'includes/footer.html' %}
+{% include 'includes/scripts.html' %}
+
+</body>
+
+</html>

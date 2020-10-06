@@ -321,3 +321,9 @@ def career(request):
 
 def blog(request):
     return render(request, 'index/blog/blog.html')
+
+
+    # ------------------------------ # Get In Touch #  --------------------------------------
+
+def contact_request(request):
+    return render(request, 'index/contact-request.html')
